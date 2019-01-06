@@ -4,7 +4,7 @@ def my_collect(lang)
   x = 0
 
   while x < lang.size
-    yield lang
+    yield lang(y)
 
     x = x + 1
   end
@@ -13,6 +13,6 @@ def my_collect(lang)
 
 end
 
-my_collect(lang) do |word|
-  word.upcase
+my_collect(lang) do |y|
+  y.upcase
 end
