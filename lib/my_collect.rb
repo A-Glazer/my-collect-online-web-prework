@@ -3,8 +3,8 @@ lang = ['ruby', 'javascript', 'python', 'objective-c']
 def my_collect(lang)
   x = 0
 
-  while x < lang.length
-    yield [lang]
+  while x < lang.size
+    yield lang
 
     x = x + 1
   end
